@@ -832,7 +832,7 @@ a {
 }
 
 .bg-right {
-  background: #000;
+  background: #121212;
   z-index: 3;
   position: fixed;
   transform: translate(-50%, -50%) skew(20deg);
@@ -846,6 +846,22 @@ a {
   width: 20vw;
   top: 50vh;
 }
+
+/* .bg-left {
+  background: #121212;
+  z-index: 3;
+  position: fixed;
+  transform: translate(-50%, -50%) skew(20deg);
+  -webkit-transform: translate(-50%, -50%) skew(20deg);
+  -moz-transform: translate(-50%, -50%) skew(20deg);
+  -ms-transform: translate(-50%, -50%) skew(20deg);
+  -o-transform: translate(-50%, -50%) skew(20deg);
+  text-align: center;
+  left: 76%;
+  height: 80vh;
+  width: 20vw;
+  top: 50vh;
+} */
 
 .bg-3 {
   background: url("../img/home.jpg") center no-repeat;
