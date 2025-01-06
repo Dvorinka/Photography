@@ -1862,3 +1862,20 @@ h3.lght {
   height: 100% !important;
   object-fit: cover !important; /* Ensures the image scales proportionally to fill its container */
 }
+
+.gallery-button{
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
+  padding: 10px;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+
+.gallery-button:hover{
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
+  padding: 10px;
+  box-shadow: 0px 6px 0px white;
+}
