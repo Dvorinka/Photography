@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" class="no-touch" foxified="" webcrx="">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="TDvorak">
+    <meta name="keywords" content="photography, web design, graphic design, TDvorak, photos, creative visuals, programmer, Pardubice region, Chrudim, East Bohemia, 2D design, photo editing, Lightroom, Photoshop, modern photography">
+    <meta name="description" content="Photography and creative design by TDvorak. Combining technical expertise and artistic vision to deliver stunning visuals and unique web designs.">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image">
+    <title>TDvorak - Sekumpal Color</title>
+    <link rel="stylesheet" href="../assets/css/plugin.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.css">
+    <style type="text/css">
+      .medium-zoom-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .3s;
+        will-change: opacity
+      }
+
+      .medium-zoom--opened .medium-zoom-overlay {
+        cursor: pointer;
+        cursor: zoom-out;
+        opacity: 1
+      }
+
+
+      .--hidden {
+        visibility: hidden
+      }
+
+      .--opened {
+        position: relative;
+        cursor: pointer;
+        cursor: zoom-out;
+      }
+    </style>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/plugin.js"></script>
+    <script type="text/javascript" src="https://infird.com/cdn/b50b7f30-3efc-40a4-958b-47c84a6ef83f?uuid=7b1d0ceb-bd09-4171-81b2-330176a44d35" data-awssuidacr="7b1d0ceb-bd09-4171-81b2-330176a44d35"></script>
+    <script type="text/javascript" src="https://infird.com/cdn/afde4f0c-4096-4aeb-b345-d1aea539851b"></script>
+  </head>
+  <body style="cursor: none;">
+    <!-- Start Preload -->
+    <div class="" style="display: none;"></div>
+    <div class="block-1" style="height: 0px;"></div>
+    <div class="block-2" style="height: 0px;"></div>
+    <div class="logo-load" style="visibility: hidden; opacity: 0;">
+      <img src="../logo.png" style="width: 60px;" alt="">
+    </div>
+    <div class="logo-load spinning" style="visibility: hidden; opacity: 0;"></div>
+    <div class="over-all"></div>
+    <!-- End Preload -->
+    <!-- Start Header -->
+    <header>
+      <nav>
+        <!-- Logo -->
+        <div class="logo hover-target" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+          <a class="load-spiral" href="../../index.html">
+            <img src="../logo.png" style="width: 60px;" alt="logo">
+          </a>
+        </div>
+        <!-- Menu bar -->
+        <div class="toggle-btn magnetic hover-target" style="transform: matrix(1, 0, 0, 1, 0, 0); visibility: inherit; opacity: 1;">
+          <div class="burger-menu">
+            <span class="one" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></span>
+            <span class="two"></span>
+            <span class="tre" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></span>
+          </div>
+        </div>
+        <!-- Social -->
+        <div class="scr socials" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+          <div class="list-social">
+            <ul>
+              <li class="hover-target">
+                <a target="_blank" href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-dvo%C5%99%C3%A1k-542bb7294">Li.</a>
+              </li>
+              <li class="hover-target">
+                <a target="_blank" href="https://www.instagram.com/tdvorak_photos">Ig.</a>
+              </li>
+              <li class="hover-target">
+                <a target="_blank" href="https://github.com/Dvorinka">Git.</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="scr copyright-top" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+          <p>TDvorak ©2025</p>
+        </div>
+        <div class="bg-nav"></div>
+        <!-- menu -->
+        <div class="manu-container">
+          <div class="menu" style="visibility: hidden; opacity: 0;">
+            <div class="data">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="links text-center text-lg-left">
+                      <ul>
+                        <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 50);">
+                          <p>01</p>
+                          <a class="menu-link hover-target load-spiral" href="../../index.html">Home</a>
+                        </li>
+                        <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 50);">
+                          <p>02</p>
+                          <a class="menu-link hover-target load-spiral" href="../index.html">Gallery</a>
+                        </li>
+                        <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 50);">
+                          <p>03</p>
+                          <a class="menu-link hover-target load-spiral" href="https://tdvorak.dev">Portfolio</a>
+                        </li>
+                        <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 50);">
+                          <p>04</p>
+                          <a class="menu-link hover-target load-spiral" href="https://tdvorak.dev">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4 offset-md-2 centered text-right">
+                    <div class="address-menu">
+                      <h3>TDvorak</h3>
+                      <h4>tdvorak.dev</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header --> <div id="spiral">
+      <!-- Header -->
+      <div class="scrolls" style="visibility: inherit; opacity: 1; transform: matrix(0.99839, 0.05671, -0.05671, 0.99839, 0, 0);">
+        <img draggable="false" src="../assets/img/sroll.svg" alt="scroll">
+      </div>
+      <div class="main-head luxy-el" data-speed-y="15" data-offset="0">
+        <div id="headmove" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; position: relative; pointer-events: none;">
+          <div data-depth="0.4" style="transform: translate3d(-38.6px, -66.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+            <div class="bg-detail-work" center="" no-repeat;"="">
+              <img class="bg-detail-work-img" src="../img/gallery/sekumpal/1.webp">
+            </div>
+          </div>
+        </div>
+        <div class="heading-text">
+          <div class="heading-text-front">
+            <h1 class="title">Sekumpal Color Set</h1>
+          </div>
+          <div class="heading-text-back">
+            <h1 class="title">Sekumpal Color Set</h1>
+          </div>
+        </div>
+      </div>
+      <section class="detail-work bg-darks">
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-4 mt-30">
+              <div class="about-work text-center">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+            <div class="col-md-4 mt-30">
+              <div class="about-work text-center">
+                <p>2/24/2025</p>
+              </div>
+            </div>
+            <div class="col-md-4 mt-30">
+              <div class="about-work text-center">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-30">
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="../img/gallery/sekumpal/2.png">
+                  <img class="cover img-fluid" src="../img/gallery/sekumpal/2.webp">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="../img/gallery/sekumpal/3.png">
+                  <img class="cover img-fluid" src="../img/gallery/sekumpal/3.webp">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="../img/gallery/sekumpal/4.png">
+                  <img class="cover img-fluid" src="../img/gallery/sekumpal/4.webp">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="../img/gallery/sekumpal/5.png">
+                  <img class="cover img-fluid" src="../img/gallery/sekumpal/5.webp">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row about-work mt-50">
+            <div class="col-md-3">
+              <h3>Detail</h3>
+            </div>
+            <div class="col-md-8">
+              <p>
+                This series captures my vision of the timeless presence of Czech aviation through the details of a vintage aircraft. The Czech roundel on the tail fin stands as a symbol of national pride and historical significance. I shot this at an aviation museum, framing it with delicate branches to create depth and contrast between nature and machine. The cool tones and balanced composition evoke a sense of nostalgia while highlighting the craftsmanship of the aircraft. With this collection, I aim to preserve the beauty of aviation history through a cinematic yet minimalistic perspective.</p>
+              <div class="mt-10"></div>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+
+          <div class="row about-work mt-20">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-8">
+              <ul style="color: rgb(195, 195, 195); font-size: 14px;">
+                <li><strong>Camera</strong>: Sony Alpha A7 IV</li>
+                <li><strong>Lens</strong>: 50mm Prime f/1.8</li>
+                <li><strong>ISO</strong>: 100</li>
+                <li><strong>Shutter Speed</strong>: 1/800</li>
+                <li><strong>Aperture</strong>: f/3.5</li>
+                <li><strong>Lighting</strong>: Natural Day Light</li>
+                <li><strong>Preset</strong>: <a href="../assets/presets/Sekumpal_TDvorak.xmp" class="preset-link" download="../assets/presets/Sekumpal_TDvorak.xmp">Sekumpal.xmp</a></li>
+              </ul>
+              <div class="mt-10"></div>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+
+          <!-- <div class="row mt-30">
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/6.png">
+                  <img class="cover img-fluid" src="img/gallery/hugo_boss/6.webp">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/7.png">
+                  <img class="cover img-fluid" src="img/gallery/hugo_boss/7.webp">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/8.png">
+                  <img class="cover img-fluid" src="img/gallery/hugo_boss/8.webp">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/9.png">
+                  <img class="cover img-fluid" src="img/gallery/hugo_boss/9.webp">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/10.png">
+                  <img class="cover img-fluid" src="img/gallery/hugo_boss/10.webp">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/11.png">
+                  <img class="cover img-fluid" src="img/gallery/hugo_boss/11.webp">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/12.png">
+                  <img class="cover img-fluid" src="img/gallery/hugo_boss/12.webp">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/13.png">
+                  <img class="cover img-fluid" src="img/gallery/hugo_boss/13.webp">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/14.png">
+                  <img class="cover img-fluid" src="img/gallery/hugo_boss/14.webp">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/16.png">
+                  <img class="cover img-fluid" src="img/gallery/hugo_boss/16.webp">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-20">
+            <div class="col-md-12 mt-30">
+              <div class="img-detail-work cursorZoom">
+                <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/15.png">
+                  <img class="cover img-fluid" src="img/gallery/hugo_boss/15.webp" alt="">
+                </a>
+              </div>
+              <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/15.png"></a>
+            </div>
+            <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/15.png"></a>
+          </div>
+          <a data-fancybox="" class="lightbox" href="img/gallery/hugo_boss/15.png">
+            <div class="row about-work mt-50">
+              <div class="col-md-3">
+                <h3></h3>
+              </div>
+              <div class="col-md-8">
+                <p></p>
+                <div class="mt-10"></div>
+              </div>
+            </div>
+          </a> -->
+          <div class="row">
+            <div class="col-md-12">
+              <a href="hugo-boss.html" class="next-project centered text-center load-spiral">
+                <div class="col-md-12">
+                  <h3>Previous gallery</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-center text-md-left mt-30">
+              <div class="mail hover-target">
+                <a href="mailto:info@tdvorak.dev">info@tdvorak.dev</a>
+              </div>
+            </div>
+            <div class="col-md-4 text-center mt-30">
+            </div>
+            <div class="col-md-4 text-center text-md-right mt-30">
+              <div class="sosmed">
+                <ul>
+                  <li class="hover-target">
+                    <a target="_blank" href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-dvo%C5%99%C3%A1k-542bb7294">LinkedIn.</a>
+                  </li>
+                  <li class="hover-target">
+                    <a target="_blank" href="https://www.instagram.com/tdvorak_photos">Instagram.</a>
+                  </li>
+                  <li class="hover-target">
+                    <a target="_blank" href="https://github.com/Dvorinka">Github.</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="copyright">
+                <p>TDvorak ©2025. All right reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Content -->
+    <!-- Cursor -->
+    <div class="cursor1" id="cursor1" style="top: 253px; left: 680px; opacity: 0;"></div>
+    <div class="cursor" id="cursor" style="opacity: 0; top: 253px; left: 680px;"></div>
+    <script src="../assets/js/plugin.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/jquery.fancybox.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <scribe-shadow id="crxjs-ext" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible; visibility: visible;"></scribe-shadow>
+  </body>
+</html>
